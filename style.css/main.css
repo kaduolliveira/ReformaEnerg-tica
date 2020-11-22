@@ -1,0 +1,256 @@
+/*elementos base*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ddd;
+    font-family: sans-serif;
+    color: #000;
+}
+/*primeiro containter*/
+.primeira{
+    background: url(/resources/FundoCabecalho.png);
+    background-size: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    text-align: justify;
+}
+.tituloEsubtitulo{
+    height: 30%;
+    width: 50%;
+    padding: 1%;
+}
+.introducao{
+    height: 70%;
+    width: 45%;
+    color: #fff;
+    padding: 3%;
+    font-size: 1.2em;
+}
+.tituloEsubtitulo img{
+    width: 80%;
+}
+/*segundo container*/
+.segunda{
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    display: table;
+}
+.segunda p{
+    width: 46%;
+    padding: 2%;
+    float: left;
+    font-style: italic;
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;;
+    font-size: 1.3em;
+    color: #46333e;
+    font-weight: bold;
+}
+/*terceiro container*/
+.terceira{
+    max-width: 100%;
+    background: #8f480e;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.explicacao{
+    width: 60%;
+    padding: 2%;
+    text-align: justify;
+}
+.explicacao h1{
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2%;
+}
+.resumoEmTopicos{
+    width: 40%;
+    padding: 2% 2% 2% 5%;
+}
+.resumoEmTopicos h1{
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2%;
+}
+.resumoEmTopicos ul li{
+    list-style-type: decimal;
+    text-align: justify;
+}
+/*quarto container*/
+.quarta{
+    width: 100%;
+    padding-bottom: 3%;
+    background: #46333e;
+}
+.quarta h1{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ddd;
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;
+}
+.tabelaPacotes{
+    width: 90%;
+    margin: auto;
+    border-style: none;
+}
+.tabelaPacotes tr th{
+    text-align: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 2.5em;
+    vertical-align: text-top;
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;
+    border-style: none;
+}
+.tabelaPacotes tr td{
+    padding: 1%;
+    text-align: justify;
+    border-style: none;
+}
+/*Quinto container*/
+.quinta{
+    width: 100%;
+    display: flex;
+    background: #8f480e;
+}
+.precosEcontato{
+    width: 50%;
+}
+.depoimentos2{
+    width: 50%;
+    background: #8f480e;
+    display: table;
+    margin: auto;
+}
+.depoimentos2 p{
+    width: 80%;
+    color: #fff;
+    text-align: justify;
+    font-family: 'domine', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding: 2%;
+    margin: auto;
+}
+.depoimentos2 iframe{
+    background: #fff;
+    margin-left: 11%;
+}
+/*rodapé*/
+.rodape{
+    width: 100%;
+    background: #1a0a13;
+    display: flex;
+    color: #ddd;
+    align-items: center;
+}
+.icones{
+    width: 50%;
+    padding: 1%;
+}
+.icones a{
+    color: #fff;
+    padding: 5px;
+}
+.autoria{
+    font-size: 0.9em;
+    width: 50%;
+    text-align: right;
+    padding-right: 2%;
+}
+.autoria a{
+    color: #fff;
+    text-decoration: none;
+}
+/*design responsivo*/
+/*Para mídias com até 768px*/
+@media screen and (max-width: 768px){
+    /*primeiro containter*/
+    .primeira{
+        height: 65vh;
+    }
+    .tituloEsubtitulo{
+        width: 60%;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .introducao{
+        width: 50%;
+        padding-left: 5%;
+        font-size: 1.3em;
+    }
+    /*segundo container*/
+    .segunda p{
+        width: 45%;
+        float: left;
+    }
+    /*terceiro container*/
+    .terceira{
+        display: block;
+        align-items: center;
+    }
+    .explicacao{
+        width: 80%;
+        padding: 5% 10% 5% 10%;
+    }
+    .resumoEmTopicos{
+        width: 80%;
+        padding: 5% 10% 5% 10%;
+    }
+    .resumoEmTopicos h1{
+        padding-bottom: 3%;
+    }
+    /*quarto container*/
+    /*nada*/
+    /*Quinto container*/
+    .quinta{
+        display: block;
+    }
+    .precosEcontato{
+        width: 100%;
+    }
+    .depoimentos2{
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .depoimentos2 iframe{
+        margin-left: 10%;
+    }
+    /*rodapé*/
+    /*nada*/
+}
+/*Para mídias com até 480px*/
+@media screen and (max-width: 480px){
+    /*primeiro containter*/
+    .tituloEsubtitulo{
+        width: 70%;
+    }
+    .introducao{
+        width: 45%;
+        padding-left: 5%;
+        font-size: 1.1em;
+    }
+    /*segundo container*/
+    .segunda{
+        padding-bottom: 3%;
+    }
+    .segunda p{
+        width: 90%;
+        padding-left: 4%;
+    }
+    /*terceiro container*/
+   /*nada*/
+    /*quarto container*/
+    /*nada*/
+    /*Quinto container*/
+    .depoimentos2{
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    /*rodapé*/
+    /*nada*/
+}
